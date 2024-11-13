@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicious Bakery</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>Alnour Bakery</h1>
+        </div>
+        
+            <div class="links">
+             <nav>
+               <ul>
+                <li><a href="about.html">About Us قصتنا</a></li>
+                <li><a href="menu.html">Our Menu قائمة الطعام</a></li>
+                <li><a href="OrderOnline.html">Online Orders طلبات الاونلاين</a></li>
+               </ul>
+             </nav>
+            </div>
+      
+    </header>
+    <section class="store-image">
+        <img src="store.jpg" alt="Alnour Bakery Storefront">
+    </section>
+    
+
+
+    <section class="banner">
+      <div class="banner-content">
+            <h2>Freshly Baked, Everyday!</h2>
+            <p>Come experience the warmth of freshly baked bread, cakes, and pastries.</p>
+            <button onclick="orderNow()">Order Now</button>
+        </div>
+        
+        <script>
+            function orderNow() {
+                window.location.href = "OrderOnline.html"; 
+            }
+        </script>  
+    </section>
+
+    
+    <footer>
+        <p>© 2024  | All rights reserved.</p>
+    </footer>
+
+    
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alnour Bakery - Menu Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+
+    <header>
+        <div class="logo">
+            <h1>Alnour Bakery Menu</h1>
+        </div>
+    </header>
+
+    
+
+    <section class="gallery">
+        <div class="gallery-container">
+           
+            <img id="gallery-image" src="bakeryimages/1" alt="Menu Item">
+            <button class="prev" onclick="prevImage()">❮</button>
+            <button class="next" onclick="nextImage()">❯</button>
+        </div>
+    </section>
+    <section class="banner">
+        <div class="banner-content">
+              <h2>Freshly Baked, Everyday!</h2>
+              <p>Come experience the warmth of freshly baked bread, cakes, and pastries.</p>
+              <button onclick="orderNow()">Order Now</button>
+          </div>
+          
+          <script>
+              function orderNow() {
+                  window.location.href = "OrderOnline.html"; 
+              }
+          </script>  
+      </section>
+    <div class="content">
+        <a href="index.html" class="back-link">Back</a>
+    </div>
+    <footer>
+        <p>© 2024 Alnour Bakery | All rights reserved.</p>
+    </footer>
+
+    <script>
+        const images = [
+            "bakeryimages/1.jpg",
+            "bakeryimages/2.jpg",
+            "bakeryimages/3.jpg",
+            "bakeryimages/4.jpg",
+            "bakeryimages/5.jpg",
+            "bakeryimages/6.jpg",
+            "bakeryimages/7.jpg",
+            "bakeryimages/8.jpg",
+            "bakeryimages/9.jpg",
+            "bakeryimages/10.jpg",
+            "bakeryimages/11.jpg",
+            "bakeryimages/12.jpg",
+            "bakeryimages/13.jpg",
+            "bakeryimages/14.jpg",
+            "bakeryimages/15.jpg",
+            "bakeryimages/16.jpg",
+            "bakeryimages/17.jpg",
+            "bakeryimages/18.jpg",
+            "bakeryimages/19.jpg",
+            "bakeryimages/20.jpg",
+            "bakeryimages/21.jpg",
+            "bakeryimages/22.jpg",
+            "bakeryimages/23.jpg",
+            "bakeryimages/24.jpg",
+            "bakeryimages/25.jpg",
+            "bakeryimages/26.jpg",
+            "bakeryimages/27.jpg",
+            "bakeryimages/28.jpg",
+            "bakeryimages/29.jpg",
+            "bakeryimages/30.jpg",
+            "bakeryimages/31.jpg"
+        ];
+
+        let currentIndex = 0;  
+
+        
+        function showImage(index) {
+            const galleryImage = document.getElementById("gallery-image");
+            galleryImage.src = images[index];
+        }
+
+
+        function nextImage() {
+            currentIndex = (currentIndex + 1) % images.length;  // Loop to the start
+            showImage(currentIndex);
+        }
+
+       
+        function prevImage() {
+            currentIndex = (currentIndex - 1 + images.length) % images.length;  // Loop to the end
+            showImage(currentIndex);
+        }
+
+        
+        showImage(currentIndex);
+    </script>
+    
+</body>
+</html>
