@@ -1,10 +1,13 @@
-body {
+html, body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     color: #333;
     background-color: #F4F4F9; 
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 header {
@@ -61,7 +64,7 @@ nav ul li a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: rgb(2, 0, 0);
     text-align: center;
 }
 
@@ -162,6 +165,7 @@ footer {
     padding: 20px;
     text-align: center;
     color: rgb(0, 0, 0); 
+    margin-top: auto;
 }
 
 .content {
@@ -207,6 +211,7 @@ footer {
 .order-box2 p {
     font-size: 28px;
     margin-bottom: 20px;
+    
 }
 
 .order-box2 a {
@@ -214,6 +219,7 @@ footer {
     margin-bottom: 20px;
     color: #0417ec; 
     text-decoration: none;
+    
 }
 
 .gallery {
@@ -281,4 +287,31 @@ footer {
     margin: 20px auto;
     border-radius: 8px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.about-box {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #FFF;
+    border: 3px solid #FF4500; /* Bright Orange Border */
+    border-radius: 20px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Subtle shadow */
+    text-align: center;
+}
+
+
+.about-box h2 {
+    font-size: 32px;
+    color: #FF4500; 
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+
+.about-box p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #333;
+    margin-bottom: 20px;
 }
